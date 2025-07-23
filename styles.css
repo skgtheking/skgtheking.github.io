@@ -1,0 +1,288 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background: #0f0f0f;
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+header {
+  background: #121212;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  color: #58a6ff;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.nav-links a {
+  margin-left: 24px;
+  color: #e5e5e5;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #58a6ff;
+}
+
+/* MAIN (Homepage + generic) */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+/* PROFILE PIC & MODAL */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #58a6ff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  border: 4px solid #58a6ff;
+}
+
+/* BIO & RESUME LINK */
+.bio {
+  max-width: 600px;
+  margin: 0 auto 16px;
+  color: #cccccc;
+}
+.resume-link {
+  color: #58a6ff;
+  font-weight: 500;
+}
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+/* SKILLS (Homepage) */
+.skills {
+  margin-top: 50px;
+  text-align: left;
+}
+.skills h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+.skills p {
+  max-width: 700px;
+  margin: 0 auto 12px;
+  color: #cccccc;
+  line-height: 1.4;
+}
+.skills strong {
+  color: #ffffff;
+}
+
+/* EXPERIENCE (Homepage) */
+.experience {
+  margin-top: 50px;
+}
+.experience h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+.experience ul {
+  list-style: disc inside;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  color: #cccccc;
+}
+.experience li {
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.experience strong {
+  color: #ffffff;
+}
+
+/* FOOTER */
+footer {
+  background: #121212;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.social-icon {
+  width: 16px;
+  height: 16px;
+  fill: #e5e5e5;
+  transition: fill 0.2s;
+}
+.socials a:hover .social-icon {
+  fill: #58a6ff;
+}
+.copyright {
+  font-size: 0.75rem;
+  color: #777777;
+}
+
+/* ─── ABOUT PAGE ───────────────────────────────────────────────────────────── */
+.about {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+.about h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+.about p,
+.about ul {
+  color: #cccccc;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.about ul {
+  list-style: disc inside;
+  margin-left: 20px;
+}
+.about ul li {
+  margin-bottom: 8px;
+}
+
+/* ─── PROJECTS PAGE ────────────────────────────────────────────────────────── */
+.projects {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.projects h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #1e1e1e;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.card p {
+  color: #cccccc;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #58a6ff;
+  font-weight: 500;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ─── CONTACT PAGE ────────────────────────────────────────────────────────── */
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.contact ul {
+  list-style: disc inside;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  color: #cccccc;
+}
+.contact li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+.contact svg {
+  vertical-align: middle;
+  margin-right: 8px;
+  fill: #cccccc;
+  width: 16px;
+  height: 16px;
+}
+.contact a {
+  color: #58a6ff;
+}
+.contact a:hover {
+  text-decoration: underline;
+}

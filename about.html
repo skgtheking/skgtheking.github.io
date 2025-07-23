@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – Shubham Gupta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    /* RESET & BASE */
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+    body {background:#0f0f0f;color:#e5e5e5;line-height:1.6;}
+    a {text-decoration:none;color:inherit;}
+    /* HEADER */
+    header {background:#121212;position:sticky;top:0;z-index:10;}
+    .container {max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:20px;}
+    .logo {color:#58a6ff;font-weight:700;font-size:1.25rem;}
+    .nav-links a {margin-left:24px;color:#e5e5e5;font-weight:500;}
+    .nav-links a:hover {color:#58a6ff;}
+    /* MAIN GENERIC */
+    main {max-width:800px;margin:0 auto;padding:60px 20px;text-align:center;}
+    h1 {font-size:2rem;margin-bottom:12px;color:#fff;}
+    /* ABOUT SPECIFIC */
+    .about {max-width:800px;margin:60px auto;padding:0 20px;text-align:left;}
+    .about h2 {font-size:1.5rem;margin-bottom:16px;color:#fff;}
+    .about p, .about ul {color:#ccc;line-height:1.5;margin-bottom:12px;}
+    .about ul {list-style:disc inside;margin-left:20px;}
+    .about ul li {margin-bottom:8px;}
+    /* FOOTER */
+    footer {background:#121212;text-align:center;padding:20px 0;margin-top:60px;}
+    .socials {display:flex;justify-content:center;gap:16px;margin-bottom:12px;}
+    .social-icon {width:16px;height:16px;fill:#e5e5e5;transition:fill .2s;}
+    .socials a:hover .social-icon {fill:#58a6ff;}
+    .copyright {font-size:.75rem;color:#777;}
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Shubham Gupta</a>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I’m Shubham Gupta, a freshly minted B.S. in Computer Science graduate from the University of Idaho and an upcoming OPT candidate (start date July 7, 2025). Born and raised in Kolkata, India, I thrive at the intersection of full-stack web development and applied machine learning. Over the past four years I’ve:
+      </p>
+      <ul>
+        <li>Built real-time dashboards and interactive UIs with React, Next.js, TypeScript, and Material UI, processing live IoT and webcam data streams.</li>
+        <li>Developed Python backends (FastAPI, Flask) and containerized services (Docker, Kubernetes) for scalable AI/ML pipelines.</li>
+        <li>Implemented custom CNNs for object detection and semantic segmentation (OpenCV, TensorFlow, PyTorch), including adversarial-robust defenses (FGSM, JSMA).</li>
+        <li>Led a capstone team to create “Dr. AI Soule,” an Unreal Engine 5 virtual professor integrated with GPT-4 RAG—cutting response latency by 30%.</li>
+        <li>Served as a one-on-one and group tutor in C, C++, data structures, and assembly for my university’s CS program.</li>
+      </ul>
+      <p>
+        I’m obsessed with clean code, elegant architecture, and shipping production-ready solutions. Outside of coding you’ll find me composing poetry, experimenting with Bollywood-style storytelling, or remixing Spotify playlists with AI-driven mood analysis. I’m now seeking a role—remote or on-site—that values innovation, collaboration, and continuous learning.
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="socials">
+      <a href="https://linkedin.com/in/shubham-gupta-891a831b2/" target="_blank" rel="noopener">
+        <svg class="social-icon" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24H22.23c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.09 20.45H3.63V9.04h3.46v11.41zm-1.73-13c-1.16 0-2.08-.93-2.08-2.08 0-1.15.93-2.08 2.08-2.08s2.08.93 2.08 2.08c0 1.15-.93 2.08-2.08 2.08zm14.66 13h-3.46v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67h-3.46V9.04h3.32v1.56h.05c.46-.87 1.59-1.79 3.28-1.79 3.5 0 4.15 2.31 4.15 5.31v6.34z"/>
+        </svg>
+      </a>
+      <a href="#" target="_blank" rel="noopener">
+        <svg class="social-icon" viewBox="0 0 24 24">
+          <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/>
+          <line x1="6" y1="18" x2="18" y2="6" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </a>
+      <a href="https://github.com/skgtheking" target="_blank" rel="noopener">
+        <svg class="social-icon" viewBox="0 0 16 16" fill="currentColor">
+          <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82A7.65 7.65 0 018 4.58c.68.003 1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.09.16 1.9.08 2.1.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+      </a>
+    </div>
+    <p class="copyright">© 2025 Shubham Gupta. All rights reserved.</p>
+  </footer>
+</body>
+</html>
